@@ -1,3 +1,0 @@
-# Static-asset redirect rules (Cloudflare Pages / Workers Static Assets syntax).
-# Declarative fallback so www -> apex holds even if the Worker entrypoint is bypassed.
-https://www.dodgecityfootball.com/* https://dodgecityfootball.com/:splat 301
