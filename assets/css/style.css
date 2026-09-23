@@ -1,0 +1,177 @@
+/* Dodge City Law — archival tribute rebuild.
+   Plain static CSS. Team colors: graphite, yellow, silver. No frameworks. */
+:root {
+  --graphite: #232323;
+  --black: #161616;
+  --yellow: #ece52b;
+  --yellow-dark: #c9c223;
+  --silver: #c9ccd1;
+  --paper: #ffffff;
+  --ink: #1d1d1d;
+  --muted: #5a5a5a;
+  --line: #e2e2e2;
+  --field: #1e5c2e;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  line-height: 1.55;
+}
+
+.archive-banner {
+  background: var(--black);
+  color: #fff;
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+.archive-banner strong { color: var(--yellow); }
+
+.site-header {
+  background: var(--yellow);
+  border-bottom: 6px solid var(--black);
+}
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1rem;
+}
+.site-header img.logo {
+  width: 84px;
+  height: auto;
+  background: #fff;
+  border: 3px solid var(--black);
+  padding: 2px;
+}
+.wordmark { line-height: 1.1; }
+.wordmark .city {
+  display: block;
+  font-size: 0.95rem;
+  letter-spacing: 0.28em;
+  font-weight: bold;
+}
+.wordmark .law {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+.wordmark .sub {
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+}
+
+nav.main-nav {
+  background: var(--black);
+}
+nav.main-nav .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  padding: 0 1rem;
+}
+nav.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.7rem 0.9rem;
+  font-weight: bold;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+}
+nav.main-nav a:hover,
+nav.main-nav a[aria-current="page"] {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.wrap {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+main.wrap { padding-top: 1.25rem; padding-bottom: 2.5rem; }
+
+h1 { font-size: 1.9rem; letter-spacing: 0.02em; margin: 0.2rem 0 0.8rem; }
+h2 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-bottom: 3px solid var(--yellow);
+  padding-bottom: 0.25rem;
+  margin-top: 2rem;
+}
+.meta { color: var(--muted); font-size: 0.9rem; }
+
+.score-strip {
+  background: var(--graphite);
+  color: #fff;
+  border-left: 8px solid var(--yellow);
+  padding: 0.9rem 1rem;
+  margin: 1rem 0 1.5rem;
+}
+.score-strip .record { color: var(--yellow); font-weight: bold; }
+
+table.schedule, table.roster {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+table.schedule th, table.roster th {
+  background: var(--black);
+  color: var(--yellow);
+  text-align: left;
+  padding: 0.55rem 0.6rem;
+}
+table.schedule td, table.roster td {
+  border-bottom: 1px solid var(--line);
+  padding: 0.5rem 0.6rem;
+  vertical-align: top;
+}
+.result-w { font-weight: 900; color: var(--field); }
+.result-l { font-weight: 900; color: #a11; }
+
+.news-list { list-style: none; margin: 1rem 0; padding: 0; }
+.news-list li {
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--black);
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+}
+.news-list .date { color: var(--muted); font-size: 0.85rem; }
+
+.two-col { display: grid; grid-template-columns: 2fr 1fr; gap: 1.5rem; }
+@media (max-width: 760px) { .two-col { grid-template-columns: 1fr; } }
+
+.sidebar-box {
+  border: 1px solid var(--line);
+  border-top: 6px solid var(--yellow);
+  padding: 0.9rem 1rem;
+  margin-bottom: 1rem;
+  background: #fafafa;
+}
+.sidebar-box h3 { margin-top: 0; font-size: 1rem; text-transform: uppercase; }
+
+footer.site-footer {
+  background: var(--black);
+  color: var(--silver);
+  padding: 1.5rem 1rem 2.5rem;
+  font-size: 0.9rem;
+}
+footer.site-footer a { color: var(--yellow); }
+footer.site-footer .wrap { display: grid; gap: 0.6rem; }
+
+.notice {
+  background: #fffbe0;
+  border: 1px solid var(--yellow-dark);
+  padding: 0.8rem 1rem;
+  margin: 1rem 0;
+}
+code, .path { font-family: Menlo, Consolas, monospace; font-size: 0.9em; }
