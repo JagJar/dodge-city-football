@@ -1,0 +1,1489 @@
+/*
+
+	Supersized - Fullscreen Slideshow jQuery Plugin
+	Version : 3.2.7
+	Site	: www.buildinternet.com/project/supersized
+	
+	Theme 	: Shutter 1.2
+	Author	: Sam Dunn
+	Company : One Mighty Roar (www.onemightyroar.com)
+	License : MIT License / GPL License
+	
+*/
+/* Controls Bar
+	----------------------------*/
+#controls-wrapper {
+  margin: 0 auto;
+  height: 42px;
+  width: 100%;
+  bottom: 0px;
+  left: 0;
+  z-index: 119;
+  background: rgba(0, 0, 0, 0.85);
+  position: fixed;
+}
+@media screen and (max-width: 767px) {
+  #controls-wrapper {
+    height: 80px;
+  }
+}
+@media screen and (max-width: 479px) {
+  #controls-wrapper {
+    height: 42px;
+  }
+}
+.load-item {
+  opacity: 0.2;
+  -ms-transition: all 0.7s ease;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+#controls {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  text-align: left;
+  z-index: 5;
+}
+#slidecounter {
+  float: left;
+  color: #999;
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-shadow: #000000 0 -1px 0;
+  margin: 0px 10px 0 15px;
+  line-height: 42px;
+}
+@media screen and (max-width: 767px) {
+  #slidecounter {
+    margin: 37px 10px 0 15px;
+    display: none;
+  }
+}
+#slidecaption {
+  overflow: hidden;
+  float: left;
+  color: #FFF;
+  font: 400 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-shadow: #000 1px 1px 2px;
+  margin: 0 20px 0 0;
+  line-height: 42px;
+}
+#navigation {
+  float: right;
+  margin: 0px 20px 0 0;
+}
+#play-button {
+  float: left;
+  margin-top: 1px;
+  border-right: 1px solid #333;
+  background: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/bg-hover.png') repeat-x 0 44px;
+  z-index: 115 !important;
+  margin-left: 70%;
+}
+@media screen and (max-width: 767px) {
+  #play-button {
+    margin-top: 37px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 479px) {
+  #play-button {
+    margin-top: 1px;
+  }
+}
+#play-button:hover {
+  background-position: 0 1px;
+  cursor: pointer;
+  z-index: 115 !important;
+}
+#prevslide,
+#nextslide {
+  position: absolute;
+  height: 43px;
+  width: 43px;
+  top: 50%;
+  margin-top: -103px;
+  opacity: 0.6;
+  z-index: 999;
+}
+#prevslide {
+  left: 0;
+  width: 56px;
+  height: 130px;
+  background: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/back.png');
+  /*                                                    opacity:0.2;*/
+}
+@media screen and (max-width: 479px) {
+  #prevslide {
+    background: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/backsize.png');
+    width: 42px;
+    height: 97px;
+  }
+}
+#nextslide {
+  right: 0;
+  width: 53px;
+  height: 130px;
+  background: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/forward.png');
+  /*                                                    opacity:0.2;*/
+}
+@media screen and (max-width: 479px) {
+  #nextslide {
+    background: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/forwardsize.png');
+    width: 42px;
+    height: 97px;
+  }
+}
+#prevslide:active,
+#nextslide:active {
+  opacity: 1;
+}
+#prevslide:hover,
+#nextslide:hover {
+  cursor: pointer;
+  /*                                                       
+                                                       -ms-transition: all 0.7s ease;
+                                                        -webkit-transition: all 0.7s ease;
+                                                        transition: all 0.7s ease;*/
+  opacity: 1;
+}
+ul#slide-list {
+  padding: 15px 0;
+  float: right;
+  position: fixed;
+  right: 6%;
+}
+@media screen and (max-width: 991px) {
+  ul#slide-list {
+    right: 8%;
+  }
+}
+@media screen and (max-width: 767px) {
+  ul#slide-list {
+    right: 32%;
+    margin-top: 37px;
+  }
+}
+@media screen and (max-width: 479px) {
+  ul#slide-list {
+    /*                                               right: 22%;*/
+    display: none;
+  }
+}
+ul#slide-list li {
+  list-style: none;
+  width: 12px;
+  height: 12px;
+  float: left;
+  margin: 0 5px 0 0;
+}
+ul#slide-list li.current-slide a,
+ul#slide-list li.current-slide a:hover {
+  background-position: 0 1px;
+}
+ul#slide-list li a {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/nav-dot.png') no-repeat 0 -20px;
+}
+ul#slide-list li a:hover {
+  background-position: 0 -10px;
+  cursor: pointer;
+}
+#tray-button {
+  float: right;
+  margin-top: 1px;
+  border-left: 1px solid #333;
+  background: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/bg-hover.png') repeat-x 0 44px;
+}
+@media screen and (max-width: 767px) {
+  #tray-button {
+    margin-top: 37px;
+  }
+}
+@media screen and (max-width: 479px) {
+  #tray-button {
+    margin-top: 1px;
+  }
+}
+#tray-button:hover {
+  background-position: 0 1px;
+  cursor: pointer;
+}
+/* Progress Bar
+	----------------------------*/
+#progress-back {
+  z-index: 128;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  background: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/progress-back.png') repeat-x;
+}
+#progress-bar {
+  position: relative;
+  height: 8px;
+  width: 100%;
+  background: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/progress-bar.png') repeat-x;
+}
+/* Thumbnail Navigation
+	----------------------------*/
+#nextthumb,
+#prevthumb {
+  z-index: 2;
+  display: none;
+  position: fixed;
+  bottom: 61px;
+  height: 75px;
+  width: 100px;
+  overflow: hidden;
+  background: #ddd;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 0 0 5px #000;
+}
+#nextthumb {
+  right: 12px;
+}
+#prevthumb {
+  left: 12px;
+}
+#nextthumb img,
+#prevthumb img {
+  width: 150px;
+  height: auto;
+}
+#nextthumb:active,
+#prevthumb:active {
+  bottom: 59px;
+}
+#nextthumb:hover,
+#prevthumb:hover {
+  cursor: pointer;
+}
+/* Thumbnail Tray
+	----------------------------*/
+#thumb-tray {
+  position: fixed;
+  z-index: 110 !important;
+  bottom: 0;
+  left: 0;
+  background: url(/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/bg-black.png);
+  height: 150px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  -moz-box-shadow: 0px 0px 4px #000;
+  -webkit-box-shadow: 0px 0px 4px #000;
+  box-shadow: 0px 0px 4px #000;
+}
+#thumb-tray:hover #thumb-list {
+  opacity: 1;
+}
+#thumb-back,
+#thumb-forward {
+  position: absolute;
+  z-index: 5;
+  bottom: 42px;
+  height: 108px;
+  width: 40px;
+  z-index: 115 !important;
+}
+#thumb-back {
+  left: 0;
+  background: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/thumb-back.png') no-repeat center center;
+}
+#thumb-forward {
+  right: 0;
+  background: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/thumb-forward.png') no-repeat center center;
+}
+#thumb-back:hover,
+#thumb-forward:hover {
+  cursor: pointer;
+  background-color: rgba(256, 256, 256, 0.1);
+  z-index: 115 !important;
+}
+#thumb-back:hover {
+  border-right: 1px solid rgba(256, 256, 256, 0.2);
+}
+#thumb-forward:hover {
+  border-left: 1px solid rgba(256, 256, 256, 0.2);
+}
+#thumb-forward:active,
+#thumb-back:active,
+#thumb-back:visited,
+#thumb-back:focus,
+#thumb-forward:focus,
+#thumb-forward:visited {
+  z-index: 115 !important;
+}
+ul#thumb-list {
+  display: inline-block;
+  list-style: none;
+  position: fixed;
+  left: 0px;
+  padding: 0 0px;
+}
+ul#thumb-list li {
+  background: #111;
+  list-style: none;
+  display: inline;
+  width: 150px;
+  height: 108px;
+  overflow: hidden;
+  float: left;
+  margin: 0;
+  z-index: 115 !important;
+  opacity: 0.2;
+}
+ul#thumb-list li.current-thumb {
+  opacity: 1;
+}
+ul#thumb-list li:hover {
+  z-index: 115 !important;
+  opacity: 1;
+}
+ul#thumb-list li img {
+  z-index: 101 !important;
+  width: 200px;
+  height: auto;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+}
+ul#thumb-list li.current-thumb img,
+ul#thumb-list li:hover img {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  z-index: 115 !important;
+}
+ul#thumb-list li:hover {
+  cursor: pointer;
+  z-index: 115 !important;
+}
+/*Control*/
+#pauseplay,
+#tray-arrow {
+  background: black;
+  width: 40px;
+  height: 40px;
+}
+#prevslide,
+#nextslide {
+  position: fixed;
+  z-index: 999;
+}
+#progress-back {
+  height: 4px !important;
+}
+#progress-bar {
+  position: relative;
+  height: 4px !important;
+  width: 100%;
+  background: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/progress-bar.png') repeat-x;
+}
+.only-progress-back {
+  bottom: 0px !important;
+  height: 5px !important;
+  background: #222222 !important;
+}
+.only-progress-bar {
+  bottom: 0px !important;
+  background: #3883cc repeat-x !important;
+}
+ul#thumb-list li img {
+  height: 100% !important;
+  width: 100%;
+}
+/*--audio---*/
+@font-face {
+  font-family: 'ChunkFiveRegular';
+  src: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/chunk-webfont.woff') format('woff'), url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/chunk-webfont.ttf') format('truetype'), url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/chunk-webfont.svg#ChunkFiveRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  
+  /*
+     * 'Chunk' font by Meredith Mandel - http://work.meredithmandel.com/#379252/Typeface-Chunk-Five
+     * http://www.theleagueofmoveabletype.com/fonts/4-chunk
+     * Provided under the SIL Open Font License (OFL)
+     * http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL&_sc=1
+    */
+}
+ul.flat {
+  list-style-type: none;
+  padding-left: 0;
+}
+ul.flat li,
+ul.graphic li {
+  padding-bottom: 1px;
+}
+ul.flat li a {
+  display: inline-block;
+  padding: 2px 4px 2px 4px;
+}
+ul.graphic {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+ul.graphic {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.graphic li {
+  margin-bottom: 2px;
+}
+ul.graphic li a,
+ul.graphic li a.sm2_link {
+  display: inline-block;
+  padding-left: 22px;
+  min-height: 16px;
+  vertical-align: middle;
+  border-radius: 3px;
+  padding: 3px 3px 3px 25px;
+  min-width: 19em;
+  _width: 19em;
+  text-decoration: none;
+  font-weight: normal;
+}
+ul.graphic li a.sm2_link {
+  -webkit-transition-property: hover;
+  -webkit-transition: background-color 0.15s linear;
+  -moz-transition: background-color 0.15s linear 0;
+  -o-transition-property: background-color;
+  -o-transition-duration: 0.15s;
+}
+ul.graphic li a,
+ul.graphic li a.sm2_paused:hover,
+ul.graphic li a.sm2_link:hover {
+  background-image: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/icon_play.png');
+  background-position: 3px 50%;
+  background-repeat: no-repeat;
+  _background-image: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/icon_play.gif');
+}
+ul.graphic li a.sm2_link:hover {
+  background-color: #036;
+  color: #ffffff;
+}
+ul.graphic li a.sm2_paused {
+  background-color: #999999;
+}
+ul.graphic li a.sm2_paused:hover {
+  background: #003366 url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/icon_play.png') no-repeat 3px 50%;
+  _background-image: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/icon_play.gif');
+}
+ul.graphic li a.sm2_playing,
+ul.graphic li a.sm2_playing:hover {
+  background: #003366 url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/icon_pause.png') no-repeat 3px 50%;
+  _background-image: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/icon_pause.gif');
+  text-decoration: none;
+}
+.sm2-bar-ui.flat .sm2-inline-gradient {
+  background-image: none;
+}
+.sm2-bar-ui.flat .sm2-box-shadow {
+  display: none;
+  box-shadow: none;
+}
+.sm2-bar-ui.no-volume .sm2-volume {
+  display: none;
+}
+.sm2-bar-ui.textured .sm2-inline-texture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+}
+.sm2-bar-ui.textured.dark-text .sm2-playlist-wrapper ul li:hover a,
+.sm2-bar-ui.textured.dark-text .sm2-playlist-wrapper ul li.selected a {
+  background-color: rgba(0, 0, 0, 0.1);
+  background-image: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/black-10.png');
+  background-image: none, none;
+}
+.sm2-bar-ui .bd {
+  display: table;
+  border-bottom: 0;
+}
+.sm2-bar-ui .sm2-extra-controls .sm2-inline-element {
+  display: inline-block;
+}
+.sm2-bar-ui.dark-text .sm2-inline-button {
+  -webkit-filter: invert(1);
+  filter: url("data:image/svg+xml;utf8,<svgxmlns=\'http://www.w3.org/2000/svg\'><filterid=\'invert\'><feColorMatrixin='SourceGraphic'type='matrix'values='-100010-100100-10100010'/></filter></svg>#invert");
+  filter: invert(1);
+  filter: none;
+}
+.sm2-bar-ui .bd a {
+  text-decoration: none;
+}
+.sm2-bar-ui .bd .sm2-button-element {
+  background: rgba(0, 0, 0, 0);
+}
+.sm2-bar-ui .bd .sm2-button-element:hover {
+  /*      background: rgba(0, 0, 0, 0.5);*/
+  background-image: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/black-10.png');
+  background-image: none, none;
+}
+.sm2-bar-ui .bd .sm2-button-element:active {
+  /*      background-color:rgba(0,0,0,0.25);                            */
+  background-image: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/black-25.png');
+  background-image: none, none;
+}
+.sm2-bar-ui .bd .sm2-extra-controls .sm2-button-element:active .sm2-inline-button,
+.sm2-bar-ui .bd .active .sm2-inline-button {
+  -ms-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -webkit-transform-origin: 50% 50%;
+  transform: scale(0.9);
+  transform-origin: 50% 50%;
+  -moz-transform: none;
+}
+.sm2-bar-ui .bd .sm2-extra-controls .sm2-button-element:hover,
+.sm2-bar-ui .bd .sm2-extra-controls .sm2-button-element:active,
+.sm2-bar-ui .bd .active {
+  /*       //background-color:rgba(0,0,0,0.1);*/
+  background-image: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/black-10.png');
+  background-image: none, none;
+}
+.sm2-bar-ui .bd .sm2-extra-controls .sm2-button-element:active {
+  box-shadow: none;
+}
+.sm2-bar-ui {
+  text-shadow: none;
+}
+.sm2-bar-ui .sm2-inline-element {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  overflow: hidden;
+}
+.sm2-bar-ui .sm2-inline-element,
+.sm2-bar-ui .sm2-button-element .sm2-button-bd {
+  position: relative;
+}
+.sm2-bar-ui .sm2-inline-element,
+.sm2-bar-ui .sm2-button-element .sm2-button-bd {
+  min-width: 27px;
+  min-height: 2.8em;
+  z-index: 108 !important;
+}
+.sm2-bar-ui .sm2-inline-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 479px) {
+  .sm2-bar-ui .sm2-inline-button {
+    width: 100%;
+  }
+}
+.sm2-bar-ui .sm2-extra-controls .bd {
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.sm2-bar-ui .sm2-extra-controls .sm2-inline-element {
+  width: 25px;
+  min-height: 1.75em;
+  min-width: 2.5em;
+}
+.sm2-bar-ui .sm2-inline-status {
+  line-height: 100%;
+  display: inline-block;
+  min-width: 200px;
+  max-width: 20em;
+  padding-left: .75em;
+  padding-right: 0.75em;
+}
+.sm2-bar-ui .sm2-inline-element {
+  border-right: .075em dotted #666;
+  border-right: 0.075em solid rgba(0, 0, 0, 0.1);
+}
+.sm2-bar-ui .sm2-inline-element.noborder {
+  border-right: 0;
+}
+.sm2-bar-ui .sm2-inline-element.compact {
+  min-width: 2em;
+  padding: 0 0.25em;
+}
+.sm2-bar-ui .sm2-inline-element:first-of-type {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  overflow: hidden;
+  z-index: 108 !important;
+}
+.sm2-bar-ui .sm2-inline-element:last-of-type {
+  border-right: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.sm2-bar-ui .sm2-inline-status a:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+.sm2-inline-time,
+.sm2-inline-duration {
+  display: table-cell;
+  width: 1%;
+  font-size: 75%;
+  line-height: .9em;
+  min-width: 2em;
+  vertical-align: middle;
+}
+.sm2-playlist-target {
+  color: white;
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0.2s;
+  -moz-transition: all 0.3s ease-in-out 0.2s;
+  -webkit-transition: all 0.3s ease-in-out 0.2s;
+  -o-transition: all 0.3s ease-in-out 0.2s;
+}
+.sm2-playlist-target:hover {
+  color: white;
+  opacity: 1;
+  transition: all 0.3s ease-in-out 0.2s;
+  -moz-transition: all 0.3s ease-in-out 0.2s;
+  -webkit-transition: all 0.3s ease-in-out 0.2s;
+  -o-transition: all 0.3s ease-in-out 0.2s;
+}
+.button-exclude {
+  color: white;
+}
+.sm2-bar-ui .sm2-playlist {
+  position: relative;
+  height: 1.45em;
+}
+.sm2-bar-ui .sm2-playlist-target {
+  position: relative;
+  min-height: 1em;
+}
+.sm2-bar-ui .sm2-playlist ul {
+  position: absolute;
+  left: 0;
+  top: -3px;
+  width: 80%;
+  font-size: 10px;
+  list-style-type: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.sm2-bar-ui p,
+.sm2-bar-ui .sm2-playlist ul,
+.sm2-bar-ui .sm2-playlist ul li {
+  margin: 0;
+  padding: 0;
+  float: left;
+  margin-left: 5px;
+}
+@media screen and (max-width: 767px) {
+  .sm2-bar-ui p,
+  .sm2-bar-ui .sm2-playlist ul,
+  .sm2-bar-ui .sm2-playlist ul li {
+    text-align: center;
+    float: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sm2-bar-ui p,
+  .sm2-bar-ui .sm2-playlist ul,
+  .sm2-bar-ui .sm2-playlist ul li {
+    text-align: none;
+    float: left;
+  }
+}
+.sm2-bar-ui .sm2-playlist ul li {
+  position: relative;
+}
+.sm2-bar-ui .sm2-playlist ul li,
+.sm2-bar-ui .sm2-playlist ul li a {
+  position: relative;
+  display: block;
+  height: 1.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+.sm2-row {
+  display: table-row;
+}
+.sm2-progress-bd {
+  padding: 3px 10px;
+}
+.sm2-progress .sm2-progress-track,
+.sm2-progress .sm2-progress-ball,
+.sm2-progress .sm2-progress-bar {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  border-radius: .65em;
+}
+.sm2-progress .sm2-progress-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  background-color: #ffffff;
+  background-image: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/black-33.png');
+  background-image: none, none;
+}
+.volume-shade,
+.playing .sm2-progress .sm2-progress-track,
+.paused .sm2-progress .sm2-progress-track {
+  cursor: pointer;
+}
+.playing .sm2-progress .sm2-progress-ball {
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.sm2-progress .sm2-progress-ball {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1em;
+  height: 1em;
+  margin: -0.2em 0 0 -0.5em;
+  width: 14px;
+  height: 14px;
+  margin: -2px 0 0 -7px;
+  width: .9333em;
+  height: .9333em;
+  margin: -0.175em 0 0 -0.466em;
+  padding: 0;
+  -webkit-transition: -webkit-transform 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out;
+}
+.sm2-progress .sm2-progress-track {
+  background-color: #707070;
+  background-image: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/black-33.png');
+  background-image: none, none;
+}
+.playing.grabbing .sm2-progress .sm2-progress-track,
+.playing.grabbing .sm2-progress .sm2-progress-ball {
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.sm2-bar-ui.grabbing .sm2-progress .sm2-progress-ball {
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+.sm2-inline-button {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  line-height: 10em;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  -ms-interpolation-mode: bicubic;
+}
+.play-pause,
+.play-pause:hover,
+.paused .play-pause:hover {
+  background-image: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/play1.png');
+  background-image: none, url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/play.svg');
+  background-size: 100.5%;
+  background-position: 40% 53%;
+}
+.playing .play-pause {
+  background-image: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/pause1.png');
+  background-image: none, url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/pause.svg');
+  background-size: 57.6%;
+  background-position: 50% 53%;
+}
+.sm2-volume-control {
+  background-image: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/volume.png');
+  background-image: none, url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/volume.svg');
+}
+.sm2-volume-control,
+.sm2-volume-shade {
+  background-position: 42% 50%;
+  background-size: 56%;
+}
+.volume-shade {
+  filter: alpha(opacity=33);
+  opacity: .33;
+  background-image: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/volumepng.png');
+  background-image: none, url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/volume.svg');
+}
+.menu {
+  /*background-image: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/list2.png');
+  background-image: none, url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/list2.svg');*/.
+  background-size: 58%;
+  background-position: 54% 51%;
+}
+.previous {
+  background-image: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/first.png');
+  background-image: none, url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/first.svg');
+}
+.next {
+  background-image: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/last.png');
+  background-image: none, url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/last.svg');
+}
+.previous,
+.next {
+  background-size: 49.5%;
+  background-position: 50% 50%;
+}
+.sm2-extra-controls .previous,
+.sm2-extra-controls .next {
+  backgound-size: 53%;
+}
+.shuffle {
+  background-image: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/shuffle.png');
+  background-image: none, url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/shuffle.svg');
+  background-size: 45%;
+  background-position: 50% 50%;
+}
+.repeat {
+  background-image: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/loop.png');
+  background-image: none, url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/loop.svg');
+  background-position: 50% 43%;
+  background-size: 54%;
+}
+.sm2-extra-controls .repeat {
+  background-position: 50% 45%;
+}
+.sm2-progress-ball .icon-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: none;
+  background-size: 72%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  display: none;
+}
+.playing.buffering .sm2-progress-ball .icon-overlay {
+  display: block;
+  -webkit-animation: spin .6s linear infinite;
+  animation: spin 0.6s linear infinite;
+}
+@-moz-keyframes spin {
+  0 {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0 {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.sm2-element ul {
+  font-size: 95%;
+  list-style-type: none;
+}
+.sm2-element ul,
+.sm2-element ul li {
+  margin: 0;
+  padding: 0;
+}
+.bd.sm2-playlist-drawer {
+  z-index: 3;
+  border-radius: 0;
+  width: 100%;
+  height: 0;
+  border: 0;
+  background-image: none;
+  display: block;
+  overflow: hidden;
+  transition: height 0.2s ease-in-out;
+}
+.sm2-bar-ui.fixed .bd.sm2-playlist-drawer,
+.sm2-bar-ui.bottom .bd.sm2-playlist-drawer {
+  position: absolute;
+}
+.sm2-bar-ui.fixed .sm2-playlist-wrapper,
+.sm2-bar-ui.bottom .sm2-playlist-wrapper {
+  padding-bottom: 0;
+}
+.sm2-bar-ui.fixed .bd.sm2-playlist-drawer,
+.sm2-bar-ui.bottom .bd.sm2-playlist-drawer {
+  bottom: 47px;
+}
+.sm2-bar-ui .bd.sm2-playlist-drawer {
+  opacity: .5;
+  transform: translateZ(0);
+}
+.sm2-bar-ui.playlist-open .bd.sm2-playlist-drawer {
+  opacity: 1;
+}
+.sm2-bar-ui.playlist-open .bd.sm2-playlist-drawer a {
+  -webkit-filter: none;
+}
+.sm2-bar-ui.fixed.playlist-open .bd.sm2-playlist-drawer .sm2-playlist-wrapper,
+.sm2-bar-ui.bottom.playlist-open .bd.sm2-playlist-drawer .sm2-playlist-wrapper {
+  padding-bottom: .5em;
+  box-shadow: none;
+}
+.sm2-bar-ui .bd.sm2-playlist-drawer {
+  transition: all 0.2s ease-in-out;
+  transition-property: transform, height, opacity, background-color, -webkit-filter;
+}
+.sm2-bar-ui .bd.sm2-playlist-drawer a {
+  transition: -webkit-filter 0.2s ease-in-out;
+}
+.sm2-bar-ui .bd.sm2-playlist-drawer .sm2-inline-texture {
+  background-position: 0 -2.8em;
+}
+.sm2-box-shadow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.15);
+}
+.sm2-playlist-wrapper {
+  position: relative;
+  padding: .5em .5em .5em .25em;
+  background-image: none, none;
+}
+.sm2-playlist-wrapper ul {
+  max-height: 101px;
+  overflow: auto;
+}
+.sm2-playlist-wrapper ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.sm2-playlist-wrapper ul li:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+.sm2-playlist-wrapper ul li a {
+  display: block;
+  padding: .5em .25em .5em .75em;
+  margin-right: .5em;
+  font-size: 90%;
+  vertical-align: middle;
+  color: white;
+}
+.sm2-playlist-wrapper ul li a.sm2-exclude {
+  display: inline-block;
+}
+.sm2-playlist-wrapper ul li a.sm2-exclude .label {
+  font-size: 95%;
+  line-height: 1em;
+  margin-left: 0;
+  padding: 2px 4px;
+}
+.sm2-playlist-wrapper ul li:hover a {
+  background-color: rgba(0, 0, 0, 0.2);
+  background-image: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/black-33.png');
+  background-image: none, none;
+}
+.sm2-bar-ui.dark-text .sm2-playlist-wrapper ul li:hover a {
+  background-color: rgba(255, 255, 255, 0.1);
+  background-image: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/black-10.png');
+  background-image: none, none;
+}
+.sm2-playlist-wrapper ul li.selected a {
+  background-color: rgba(0, 0, 0, 0.25);
+  background-image: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/black-33.png');
+  background-image: none, none;
+}
+.sm2-bar-ui.dark-text ul li.selected a {
+  background-color: rgba(255, 255, 255, 0.1);
+  background-image: url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/black-10.png');
+  background-image: none, none;
+}
+.sm2-bar-ui .disabled {
+  filter: alpha(opacity=33);
+  opacity: 0.33;
+}
+.sm2-bar-ui .bd .sm2-button-element.disabled:hover {
+  background-color: transparent;
+}
+.sm2-bar-ui .active,
+.sm2-bar-ui.playlist-open .sm2-menu:hover {
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+  background-image: none;
+}
+.firefox-fix {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.sm2-playlist-wrapper ul::-webkit-scrollbar {
+  width: 5px;
+}
+.sm2-playlist-wrapper ul::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.33);
+  border-radius: 5px;
+}
+.sm2-playlist-wrapper ul::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #ffffff;
+}
+.sm2-extra-controls {
+  font-size: 0;
+  text-align: center;
+}
+.sm2-bar-ui .label {
+  position: relative;
+  display: inline-block;
+  font-size: .7em;
+  margin-left: .25em;
+  vertical-align: top;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  padding: 0 3px;
+  box-sizing: padding-box;
+}
+.sm2-bar-ui.dark-text .label {
+  background-color: rgba(0, 0, 0, 0.1);
+  background-image: url(/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/css/bar-ui/image/black-10.png);
+  background-image: none, none;
+}
+.sm2-bar-ui .sm2-playlist-drawer .label {
+  font-size: .8em;
+  padding: 0 3px;
+}
+.sm2-bar-ui .sm2-inline-element {
+  display: table-cell;
+}
+.sm2-bar-ui .sm2-inline-element {
+  width: 1%;
+}
+.sm2-bar-ui .sm2-inline-status {
+  width: 100%;
+  min-width: 100%;
+  max-width: 1
+                      00%;
+  padding-top: 22px;
+}
+.sm2-bar-ui > .bd {
+  width: 87%;
+}
+@media screen and (max-width: 767px) {
+  .sm2-bar-ui > .bd {
+    width: 100%;
+  }
+}
+.sm2-bar-ui .sm2-playlist-drawer {
+  display: block;
+  overflow: hidden;
+}
+.ui360,
+.sm2-360ui {
+  position: relative;
+}
+.ui360 {
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+.ui360,
+.sm2-360ui {
+  min-width: 50px;
+  min-height: 50px;
+}
+.sm2-360ui {
+  width: 50px;
+  height: 50px;
+}
+.sm2-360ui {
+  background-color: #f9f9f9;
+  background-color: rgba(0, 0, 0, 0.025);
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.15);
+  border-radius: 100%;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  -moz-transition-property: background, border, box-shadow;
+  -webkit-transition-property: background, border, box-shadow;
+  transition-property: background, border, box-shadow;
+}
+.sm2-360ui:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15);
+}
+.ui360,
+.ui360 * {
+  vertical-align: middle;
+}
+.sm2-360ui {
+  position: relative;
+  display: inline-block;
+  float: left;
+  *display: inline;
+  clear: left;
+}
+.sm2-360ui.sm2_playing,
+.sm2-360ui.sm2_paused {
+  z-index: 10;
+}
+.ui360 a {
+  float: left;
+  display: inline;
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  left: 3px;
+  top: 18px;
+  text-indent: 50px;
+}
+.ui360 a.sm2_link {
+  text-indent: 0;
+}
+.ui360 a,
+.ui360 a:hover,
+.ui360 a:focus {
+  padding: 2px;
+  margin-left: -2px;
+  margin-top: -2px;
+}
+.ui360 a:hover,
+.ui360 a:focus {
+  background: #eee;
+  border-radius: 3px;
+  outline: 0;
+}
+.ui360 .sm2-canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.ui360 .sm2-canvas.hi-dpi {
+  top: -50%;
+  left: -50%;
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+}
+.ui360 .sm2-timing {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font: 11px "helvetica neue", helvetica, monaco, lucida, terminal, monospace;
+  color: #666;
+  text-align: center;
+  line-height: 50px;
+}
+.ui360 .sm2-cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: none;
+  background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==);
+}
+.ui360 .sm2-360btn {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: -25px;
+  margin-top: -25px;
+  border-radius: 25px;
+  cursor: pointer;
+  z-index: 3;
+}
+.ui360 .sm2-360data {
+  display: inline-block;
+  font-family: helvetica;
+}
+.sm2-inline-block .ui360 .sm2-360btn,
+.ui360 .sm2-360ui.sm2_playing .sm2-360btn,
+.ui360 .sm2-360ui.sm2_paused .sm2-360btn {
+  width: 22px;
+  height: 22px;
+  margin-left: -11px;
+  margin-top: -11px;
+}
+.ui360 .sm2-360ui.sm2_playing .sm2-cover,
+.ui360 .sm2-360ui.sm2_paused .sm2-cover {
+  display: block;
+}
+.ui360,
+.ui360 .sm2-360btn-default,
+.ui360 .sm2-360ui.sm2_paused .sm2-360btn {
+  background: transparent url('/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/img/audio/360-button-play.png') no-repeat;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAABoUlEQVR42sWVu2oCQRhGU/s8gpVYJeQJNkZSbiH4QNuLlQZS21sJayGYaOEFVFDxNiremj9zig2uzk5YQpKFg8PMd75ZZle9E5Ff4e+Ll8tlQuNoPI2vUcCYOdbIxCmm9F5T0YgNMmS/LebSwWdNa7VayXq9ls1mI9vtVna7nQBj5lgjQxYHN7KY3QkiUbDf7+V4PMrpdArBHGtkyOJc3/n1mVaUUl+F5/PZSrABDi4dpmKH3QkixQEHlw5TsccZmsRCoSD1et1ajkuHqdg/HA5GKZPJCOTzeanVasYMLh2mYsXDIGAoDuG6rlSr1WCdBxrcsTIWazgrQiHS6bSRYJ3XDzeq2O/3+9Ltdm9IpVIhstmslEqlUAY36ii8ZrMpjUbjhmQyKeA4jhSLRWMGN+rhOZ1Oh8ANuVxOyuUy40hwo163RK/XeyPQbrdjgYNr/ILAYDB41Gf1wZnFAQfX+iM0HA5fxuPx+2g0Ej22QoYsDq61mGsymTxMp9NX/Sk2yJDFsRZfXpzXbDZ7WiwW3nw+9zUKGDPHGpkL5V//mn7OJyJZApyzeUS5AAAAAElFTkSuQmCC);
+  background-image: none, url(/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/css/360-player/360-button-play-2x.png);
+  background-size: 22px 22px;
+  *background-image: url(/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/css/360-player/360-button-play.png);
+  background-repeat: no-repeat;
+}
+.ui360 {
+  background-position: 14px 50%;
+  _background: transparent url(/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/css/360-player/360-button-play.gif) no-repeat 14px 50%;
+}
+.ui360 .sm2-360btn-default,
+.ui360 .sm2-360ui.sm2_paused .sm2-360btn {
+  background-position: 50% 50%;
+  _background: transparent url(/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/css/360-player/360-button-play.gif) no-repeat 50% 50%;
+}
+.ui360 .sm2-360btn-default,
+.ui360 .sm2-360ui.sm2_paused .sm2-360btn {
+  cursor: pointer;
+}
+.ui360 .sm2-360btn-default:hover,
+.ui360 .sm2-360ui.sm2_paused .sm2-360btn:hover {
+  background: transparent url(/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/css/360-player/360-button-play-light.png) no-repeat 50% 50%;
+  background-image: none, url(/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/css/360-player/360-button-play-light-2x.png);
+  background-size: 22px 22px;
+  _background: transparent url(/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/css/360-player/360-button-play.gif) no-repeat 50% 50%;
+  cursor: pointer;
+}
+.ui360 .sm2-360ui.sm2_playing .sm2-360btn:hover,
+.ui360 .sm2-360btn-playing:hover {
+  background: transparent url(/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/css/360-player/360-button-pause-light.png) no-repeat 50% 50%;
+  background-image: none, url(/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/css/360-player/360-button-pause-light-2x.png);
+  background-size: 22px 22px;
+  _background: transparent url(/web/20161203080146im_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/css/360-player/360-button-pause-light.gif) no-repeat 50% 50%;
+  cursor: pointer;
+}
+div.html5support {
+  clear: both;
+  padding-top: 2em;
+}
+body.home #sm2-visualization .ui360 .sm2_playing canvas,
+body.home #sm2-visualization .ui360 .sm2_paused canvas {
+  box-shadow: inset 0 0 32px rgba(0, 0, 0, 0.066);
+}
+body.home .gsfn_topic_list li {
+  display: none;
+}
+body.home .gsfn_topic_list .gsfn-item-1,
+body.home .gsfn_topic_list .gsfn-item-2,
+body.home .gsfn_topic_list .gsfn-item-3 {
+  display: block;
+}
+div.clearfix {
+  //font-size: 0;
+ // height: 0;
+  //overflow: hidden;
+}
+div.icons ul {
+  list-style-type: none;
+}
+div.icons ul,
+div.icons ul li {
+  margin: 0;
+  padding: 0;
+}
+div.icons ul li,
+.icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  *display: none;
+  background: transparent url(data:image/png;base64,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) no-repeat;
+  width: 32px;
+  height: 24px;
+  padding-right: 4px;
+  text-indent: -999em;
+  overflow: hidden;
+  cursor: help;
+  opacity: 0.75;
+}
+div.icons ul li:hover,
+.icon:hover {
+  opacity: 1;
+}
+.icon {
+  display: inline-block;
+  *display: none;
+  width: 32px;
+  height: 30px;
+  margin-left: 16px;
+  margin-top: 5px;
+  opacity: .85;
+  cursor: default;
+}
+div.icons ul li.desktop {
+  background-position: -11px -12px;
+  height: 24px;
+}
+div.icons ul li.laptop {
+  background-position: -59px -13px;
+  height: 22px;
+}
+div.icons ul li.ipad {
+  background-position: -109px -10px;
+  width: 28px;
+  height: 28px;
+}
+div.icons ul li.iphone {
+  background-position: -256px -9px;
+  width: 22px;
+  height: 28px;
+}
+div.icons ul li.android {
+  background-position: -299px -7px;
+  width: 28px;
+  height: 32px;
+}
+.icon.performance,
+div.icons ul li.performance {
+  background-position: -205px -9px;
+}
+.icon.performance {
+  width: 18px;
+  height: 28px;
+  margin-top: -7px;
+}
+.icon.music-note,
+div.icons ul li.music-note {
+  background-position: -155px -13px;
+}
+.icon.music-note {
+  width: 19px;
+  height: 23px;
+  margin-top: -4px;
+}
+.icon.package,
+div.icons ul li.package {
+  background-position: -347px -7px;
+  height: 28px;
+}
+.icon.package {
+  width: 22px;
+  margin-top: -8px;
+}
+.bonus-demos {
+  position: relative;
+  list-style-type: none;
+}
+.bonus-demos,
+.bonus-demos li {
+  margin: 0;
+  padding: 0;
+}
+.bonus-demos li {
+  float: left;
+  display: inline;
+  width: 24%;
+  margin-right: 1%;
+  text-align: center;
+}
+.bonus-demos li img {
+  border-radius: 4px;
+}
+#client-requests ul.flat {
+  list-style-type: none;
+  padding-left: .5em;
+  margin-top: 0.5em;
+}
+#client-requests ul.flat li {
+  margin-bottom: 0;
+}
+#inline-video {
+  position: relative;
+  margin-top: 4.25em;
+  margin-right: 0.5em;
+}
+#bar-ui-1 {
+  position: fixed;
+  z-index: 120 !important;
+  width: 50%;
+  bottom: -5px;
+  left: 0;
+}
+@media screen and (max-width: 767px) {
+  #bar-ui-1 {
+    width: 100%;
+    left: 0;
+    bottom: 37px;
+  }
+}
+@media screen and (max-width: 479px) {
+  #bar-ui-1 {
+    width: 78%;
+    left: 37px;
+    bottom: -5px;
+  }
+}
+#bar-ui-1 .bd,
+#bar-ui-1 .sm2-bar-ui .sm2-extra-controls,
+#bar-ui-1 .sm2-bar-ui .sm2-playlist-drawer {
+  z-index: 101 !important;
+}
+@media screen and (max-width: 767px) {
+  #bar-ui-1 .bd,
+  #bar-ui-1 .sm2-bar-ui .sm2-extra-controls,
+  #bar-ui-1 .sm2-bar-ui .sm2-playlist-drawer {
+    margin-left: 0;
+  }
+}
+#about-sm2 .sm2-bar-ui .sm2-playlist-drawer {
+  transform: scale3d(1, 1, 1);
+}
+/*theme*/
+.sm2-inline-time {
+  border-right: 1px solid #ffffff;
+  padding-right: 5px;
+  color: white;
+}
+.sm2-inline-duration {
+  padding-left: 5px;
+  color: white;
+}
+.sm2-progress {
+  /*    //position: absolute;*/
+  z-index: 108 !important;
+  bottom: 14px;
+}
+.sm2-playlist-wrapper {
+  background: rgba(24, 24, 22, 0.64);
+}
+b .title-audio:hover,
+.exclude:hover,
+.exclude:active,
+.exclude:focus {
+  color: #ffffff;
+}
+@media screen and (min-width: 1024px) {
+  #play-button {
+    margin-left: 70%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #play-button {
+    margin-left: 55%;
+  }
+}
+/*# sourceMappingURL=supersized.shutter.css.map */
+/*
+     FILE ARCHIVED ON 08:01:46 Dec 03, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 05:34:59 Oct 22, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 0.335
+  load_resource: 189.155 (2)
+  PetaboxLoader3.resolve: 87.43 (2)
+  PetaboxLoader3.datanode: 51.745 (2)
+  revisit.resolve: 83.799
+*/

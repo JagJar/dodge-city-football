@@ -1,0 +1,133 @@
+div.fastsocialshare_container {
+	float: none;
+}
+
+div.fastsocialshare_clearer {
+	clear: left;
+}
+
+.fastsocialshare-share {
+	display: block !important;
+}
+
+.fastsocialshare-share-tw {
+	float: left;
+	margin: 5px;
+}
+
+.fastsocialshare-share-fbsh {
+	float: left;
+	margin: 5px;
+}
+
+.fastsocialshare-share-fbl {
+	float: left;
+	margin: 5px;
+}
+
+.fastsocialshare-share-su {
+	float: left;
+	margin: 5px;
+}
+
+.fastsocialshare-share-lin {
+	float: left;
+	margin: 5px;
+}
+
+.fastsocialshare-share-gone {
+	float: left;
+	margin: 5px;
+}
+
+.fastsocialshare-share-pinterest {
+	float: left;
+	margin: 5px;
+}
+
+div.sharemebutton {
+	padding: 0px 0px 0px 0px;
+	float: right;
+	width: 56px;
+	max-height: 195px;
+	text-align: center;
+}
+
+td.sharemebutton {
+	padding-right: 0px;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	vertical-align: top;
+}
+
+td.space_right {
+	padding: 0px 0px 0px 0px;
+}
+
+div.sharemebuttont {
+	padding: 0px 2px 0px 0px;
+	float: right;
+}
+
+td.sharemebuttont {
+	padding-right: 0px;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	vertical-align: top;
+}
+
+td.space_right {
+	padding: 0px 0px 0px 0px;
+}
+
+div.sharemebuttonf {
+	padding: 2px 2px 0px 0px;
+	float: right;
+}
+
+td.sharemebuttonf {
+	padding-right: 2px;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	vertical-align: top;
+}
+
+.fb_share_large .fb_sharecount_zero {
+	-moz-border-radius: 2px 2px 2px 2px;
+	background: url("https://web.archive.org/web/20161203132058im_/http://static.fbshare.me/f_only.png") no-repeat scroll
+		20px 5px #3B5998;
+	display: block;
+	height: 47px;
+	margin-bottom: 2px;
+	width: 53px;
+}
+
+.fb_iframe_widget span {
+	position: inherit !important;
+}
+
+.fb_iframe_widget {
+	position: inherit !important;
+}
+/*
+     FILE ARCHIVED ON 13:20:58 Dec 03, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 05:34:59 Oct 22, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 0.361
+  load_resource: 227.285 (2)
+  PetaboxLoader3.resolve: 115.009 (2)
+  PetaboxLoader3.datanode: 105.669 (2)
+  revisit.resolve: 92.147
+*/
