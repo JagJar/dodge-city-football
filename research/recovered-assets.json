@@ -1,0 +1,762 @@
+[
+  {
+    "local_path": "public/assets/fonts/7XUFZ5tgS-tD6QamInJTcU3KvHLhcNjEHFQzwNtdMQY.ttf",
+    "original_url": "https://fonts.gstatic.com/s/titilliumweb/v4/7XUFZ5tgS-tD6QamInJTcU3KvHLhcNjEHFQzwNtdMQY.ttf",
+    "capture": "20170316123010",
+    "replay_url": "https://web.archive.org/web/20170316123010im_/https://fonts.gstatic.com/s/titilliumweb/v4/7XUFZ5tgS-tD6QamInJTcU3KvHLhcNjEHFQzwNtdMQY.ttf",
+    "mime": "font/ttf",
+    "bytes": 27988,
+    "sha256": "07b7f3364b6f95c597997861fe2be911a15c65092d5f2d5d0fc23dff279e47fa",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/assets/fonts/anMUvcNT0H1YN4FII8wprzsSLeNQG2cy_mKit6iEdYs.ttf",
+    "original_url": "http://fonts.gstatic.com/s/titilliumweb/v4/anMUvcNT0H1YN4FII8wprzsSLeNQG2cy_mKit6iEdYs.ttf",
+    "capture": "20170316111624",
+    "replay_url": "https://web.archive.org/web/20170316111624im_/http://fonts.gstatic.com/s/titilliumweb/v4/anMUvcNT0H1YN4FII8wprzsSLeNQG2cy_mKit6iEdYs.ttf",
+    "mime": "font/ttf",
+    "bytes": 26724,
+    "sha256": "fb2967587e860f47656a439404269ddce82cb50610994b29989361fdf3e2e08f",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/cache/mod_bt_contentslider/3d24eca88710b0485e7a6dd331657889-various-players.jpg",
+    "original_url": "http://dodgecityfootball.com/cache/mod_bt_contentslider/3d24eca88710b0485e7a6dd331657889-various-players.jpg",
+    "capture": "20171011001326",
+    "replay_url": "https://web.archive.org/web/20171011001326im_/http://dodgecityfootball.com/cache/mod_bt_contentslider/3d24eca88710b0485e7a6dd331657889-various-players.jpg",
+    "mime": "image/jpeg",
+    "bytes": 13089,
+    "sha256": "4fa653498450b6376a323c4ef3f54b995aa60227c6d7e5a444fc1b9985d80c14",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/cache/mod_bt_contentslider/52419f2a3f6ab0e2f6719b2d4f321625-rjohnson.jpg",
+    "original_url": "http://dodgecityfootball.com/cache/mod_bt_contentslider/52419f2a3f6ab0e2f6719b2d4f321625-rjohnson.jpg",
+    "capture": "20171011001540",
+    "replay_url": "https://web.archive.org/web/20171011001540im_/http://dodgecityfootball.com/cache/mod_bt_contentslider/52419f2a3f6ab0e2f6719b2d4f321625-rjohnson.jpg",
+    "mime": "image/jpeg",
+    "bytes": 14362,
+    "sha256": "4c1ca56d297bfde3fcc16e2a540aad354d25c51dd7dfb0131c9ffbd17029c6e9",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/cache/mod_bt_contentslider/5df9cb74d9fcc27201d690570ced28d3-no-image.jpg",
+    "original_url": "http://dodgecityfootball.com/cache/mod_bt_contentslider/5df9cb74d9fcc27201d690570ced28d3-no-image.jpg",
+    "capture": "20171010222601",
+    "replay_url": "https://web.archive.org/web/20171010222601im_/http://dodgecityfootball.com/cache/mod_bt_contentslider/5df9cb74d9fcc27201d690570ced28d3-no-image.jpg",
+    "mime": "image/jpeg",
+    "bytes": 14149,
+    "sha256": "874b8be0c738d53b5a9bf678fd7f437a6be717f17d323e24cfc83c47d368eb62",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/dodge-city-law-logo.png",
+    "original_url": "http://www.dodgecityfootball.com/images/dodge-city-law-logo.png",
+    "capture": "20161203130631",
+    "replay_url": "https://web.archive.org/web/20161203130631im_/http://www.dodgecityfootball.com/images/dodge-city-law-logo.png",
+    "mime": "image/png",
+    "bytes": 185766,
+    "sha256": "9a652f743ceeaa274380a393bdfd0615685d84fc55385f34f7ea39a1de775d4c",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/ads/ab1.jpg",
+    "original_url": "http://dodgecityfootball.com/images/league/ads/ab1.jpg",
+    "capture": "20171010232626",
+    "replay_url": "https://web.archive.org/web/20171010232626im_/http://dodgecityfootball.com/images/league/ads/ab1.jpg",
+    "mime": "image/jpeg",
+    "bytes": 48502,
+    "sha256": "60b654819e8827686e615d7409b8055461bb48c0a44de85250d573de04db9da4",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/ads/baden-vidswap-banner.jpg",
+    "original_url": "http://dodgecityfootball.com/images/league/ads/baden-vidswap-banner.jpg",
+    "capture": "20161223192702",
+    "replay_url": "https://web.archive.org/web/20161223192702im_/http://dodgecityfootball.com/images/league/ads/baden-vidswap-banner.jpg",
+    "mime": "image/jpeg",
+    "bytes": 37541,
+    "sha256": "ee8c9a3e2deef589e7dc7d9f7023f26179c54595853aec195b00267f3e2c9979",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/ads/cargill.jpg",
+    "original_url": "http://dodgecityfootball.com/images/league/ads/cargill.jpg",
+    "capture": "20171010232950",
+    "replay_url": "https://web.archive.org/web/20171010232950im_/http://dodgecityfootball.com/images/league/ads/cargill.jpg",
+    "mime": "image/jpeg",
+    "bytes": 38154,
+    "sha256": "ad3c7f7d5cec116e35f98a4eaf896b90c1b7947105d97b93145d9bd7477be1e8",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/ads/cif-mobile.jpg",
+    "original_url": "http://dodgecityfootball.com/images/league/ads/cif-mobile.jpg",
+    "capture": "20161223173628",
+    "replay_url": "https://web.archive.org/web/20161223173628im_/http://dodgecityfootball.com/images/league/ads/cif-mobile.jpg",
+    "mime": "image/jpeg",
+    "bytes": 179732,
+    "sha256": "4313b00d469c5212ae1804ff273dbbff8b3d5ed1a387a51cd81333e8a8f318c9",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/ads/lia-gg-mcdonalds-banner.jpg",
+    "original_url": "http://dodgecityfootball.com/images/league/ads/lia-gg-mcdonalds-banner.jpg",
+    "capture": "20171010232641",
+    "replay_url": "https://web.archive.org/web/20171010232641im_/http://dodgecityfootball.com/images/league/ads/lia-gg-mcdonalds-banner.jpg",
+    "mime": "image/jpeg",
+    "bytes": 242517,
+    "sha256": "1d796431d7c7051353cd9f517b539856c2c3f12e20ef693254a4aca54d965fcb",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/ads/scorestream-horizontal-banner.jpg",
+    "original_url": "http://dodgecityfootball.com/images/league/ads/scorestream-horizontal-banner.jpg",
+    "capture": "20161223205415",
+    "replay_url": "https://web.archive.org/web/20161223205415im_/http://dodgecityfootball.com/images/league/ads/scorestream-horizontal-banner.jpg",
+    "mime": "image/jpeg",
+    "bytes": 47246,
+    "sha256": "58c3691e16f920a7a789eb48da628cd6271c97a9a403ddc480977ec1698671a3",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/ads/secondary-links-banner.jpg",
+    "original_url": "http://dodgecityfootball.com/images/league/ads/secondary-links-banner.jpg",
+    "capture": "20171010230203",
+    "replay_url": "https://web.archive.org/web/20171010230203im_/http://dodgecityfootball.com/images/league/ads/secondary-links-banner.jpg",
+    "mime": "image/jpeg",
+    "bytes": 105566,
+    "sha256": "9f232026325a3455a2b4477890287edd6a3884f1b6a94884b84ed7853b33fd2b",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/ads/title-sponsor.jpg",
+    "original_url": "http://www.dodgecityfootball.com/images/league/ads/title-sponsor.jpg",
+    "capture": "20161203084908",
+    "replay_url": "https://web.archive.org/web/20161203084908im_/http://www.dodgecityfootball.com/images/league/ads/title-sponsor.jpg",
+    "mime": "image/jpeg",
+    "bytes": 108787,
+    "sha256": "6e4ac85bfd27ece4ba65fb83f28ade8d4827c5751a9d942a03a5b5306eedeb76",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/ads/top-secondary-links.png",
+    "original_url": "http://dodgecityfootball.com/images/league/ads/top-secondary-links.png",
+    "capture": "20171010230630",
+    "replay_url": "https://web.archive.org/web/20171010230630im_/http://dodgecityfootball.com/images/league/ads/top-secondary-links.png",
+    "mime": "image/png",
+    "bytes": 130274,
+    "sha256": "e0f93a92b95b11141e5d909b179d9826081d5ddbc662fbdd1237e71b297438dc",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/ads/united-wireless.jpg",
+    "original_url": "http://dodgecityfootball.com/images/league/ads/united-wireless.jpg",
+    "capture": "20171010225604",
+    "replay_url": "https://web.archive.org/web/20171010225604im_/http://dodgecityfootball.com/images/league/ads/united-wireless.jpg",
+    "mime": "image/jpeg",
+    "bytes": 37418,
+    "sha256": "1889a4d1dcbbba6d0574255f79630e7de2073064e74e5039a95db4adcff1839b",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/coaches/Alex_Staats.jpg",
+    "original_url": "http://dodgecityfootball.com/images/league/coaches/Alex_Staats.jpg",
+    "capture": "20161223202408",
+    "replay_url": "https://web.archive.org/web/20161223202408im_/http://dodgecityfootball.com/images/league/coaches/Alex_Staats.jpg",
+    "mime": "image/jpeg",
+    "bytes": 35573,
+    "sha256": "6a6216174c26f7ba6d75d1b9f51012a071cf012fef1ea02b11b31d0fe2e56696",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/coaches/Jason_Scheck.jpg",
+    "original_url": "http://dodgecityfootball.com/images/league/coaches/Jason_Scheck.jpg",
+    "capture": "20161223205310",
+    "replay_url": "https://web.archive.org/web/20161223205310im_/http://dodgecityfootball.com/images/league/coaches/Jason_Scheck.jpg",
+    "mime": "image/jpeg",
+    "bytes": 31226,
+    "sha256": "655544bae67401bb665798a4b29dc41c3288919e58764267e9fd25e94d58db61",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/coaches/Kurt_Landgren.jpg",
+    "original_url": "http://dodgecityfootball.com/images/league/coaches/Kurt_Landgren.jpg",
+    "capture": "20161223202324",
+    "replay_url": "https://web.archive.org/web/20161223202324im_/http://dodgecityfootball.com/images/league/coaches/Kurt_Landgren.jpg",
+    "mime": "image/jpeg",
+    "bytes": 31115,
+    "sha256": "94f328daf037b904269c2e3076c1e4d2779e2ccccbf8724d9816dedc988fd7ea",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/coaches/Sean_Ponder.jpg",
+    "original_url": "http://dodgecityfootball.com/images/league/coaches/Sean_Ponder.jpg",
+    "capture": "20161223202405",
+    "replay_url": "https://web.archive.org/web/20161223202405im_/http://dodgecityfootball.com/images/league/coaches/Sean_Ponder.jpg",
+    "mime": "image/jpeg",
+    "bytes": 30544,
+    "sha256": "139c42d06424421483c0edb426ac3800a84cf7feb50845a7a5d37f63c926adce",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/flyers/dodge-seating-chart.jpg",
+    "original_url": "http://dodgecityfootball.com/images/league/flyers/dodge-seating-chart.jpg",
+    "capture": "20161225095022",
+    "replay_url": "https://web.archive.org/web/20161225095022im_/http://dodgecityfootball.com/images/league/flyers/dodge-seating-chart.jpg",
+    "mime": "image/jpeg",
+    "bytes": 203840,
+    "sha256": "dab36d91760025c910af49eaf2112ec80d6f1c8ed0c322d5c273cd38e6a4f03b",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/mobile-slides/catch.jpg",
+    "original_url": "http://www.dodgecityfootball.com/images/league/mobile-slides/catch.jpg",
+    "capture": "20161203134736",
+    "replay_url": "https://web.archive.org/web/20161203134736im_/http://www.dodgecityfootball.com/images/league/mobile-slides/catch.jpg",
+    "mime": "image/jpeg",
+    "bytes": 179602,
+    "sha256": "a412373024814ec486819c741b6dee00a9789414a74416aa2a8a551b1a36e099",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/partners/freddys.jpg",
+    "original_url": "http://dodgecityfootball.com/images/league/partners/freddys.jpg",
+    "capture": "20171011001537",
+    "replay_url": "https://web.archive.org/web/20171011001537im_/http://dodgecityfootball.com/images/league/partners/freddys.jpg",
+    "mime": "image/jpeg",
+    "bytes": 151512,
+    "sha256": "907ca3e2d87dc2bc574281e9287cd568e4c74b31ca83aa5e36c7f402f0ceeafb",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/pix/arena-seating-chart.jpg",
+    "original_url": "http://dodgecityfootball.com/images/league/pix/arena-seating-chart.jpg",
+    "capture": "20171010223243",
+    "replay_url": "https://web.archive.org/web/20171010223243im_/http://dodgecityfootball.com/images/league/pix/arena-seating-chart.jpg",
+    "mime": "image/jpeg",
+    "bytes": 44484,
+    "sha256": "5b9f3fc8bc5fdbcc4ca2a0705e818e318f2ca888ff603786264075c67b49a410",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/pix/fp-spacer.jpg",
+    "original_url": "http://dodgecityfootball.com/images/league/pix/fp-spacer.jpg",
+    "capture": "20171010235043",
+    "replay_url": "https://web.archive.org/web/20171010235043im_/http://dodgecityfootball.com/images/league/pix/fp-spacer.jpg",
+    "mime": "image/jpeg",
+    "bytes": 62177,
+    "sha256": "76894b76b43e3c808c6daba1bc7df8147ddb961363c48b6d3b5f3d1806df1b21",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/pix/rss-feed-icon.jpg",
+    "original_url": "http://dodgecityfootball.com/images/league/pix/rss-feed-icon.jpg",
+    "capture": "20161223205321",
+    "replay_url": "https://web.archive.org/web/20161223205321im_/http://dodgecityfootball.com/images/league/pix/rss-feed-icon.jpg",
+    "mime": "image/jpeg",
+    "bytes": 14774,
+    "sha256": "cf7230fdd8476d9aedeaa740f39cc97c6cffbcd82a0f8a8aafd450e7750b49bf",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/pix/schedule-banner.jpg",
+    "original_url": "http://dodgecityfootball.com/images/league/pix/schedule-banner.jpg",
+    "capture": "20171010223856",
+    "replay_url": "https://web.archive.org/web/20171010223856im_/http://dodgecityfootball.com/images/league/pix/schedule-banner.jpg",
+    "mime": "image/jpeg",
+    "bytes": 42402,
+    "sha256": "59a3f76931bb9f95f7840f8a8382298c6bde19c47979b5cbebfd161eaadc620b",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/pix/shop-banner.jpg",
+    "original_url": "http://dodgecityfootball.com/images/league/pix/shop-banner.jpg",
+    "capture": "20171010230920",
+    "replay_url": "https://web.archive.org/web/20171010230920im_/http://dodgecityfootball.com/images/league/pix/shop-banner.jpg",
+    "mime": "image/jpeg",
+    "bytes": 46602,
+    "sha256": "527c0157355b5f4e2e4e16e406ccfd8785559b856f0db18fb88a65da3c2e784e",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/pix/tickets-banner.jpg",
+    "original_url": "http://dodgecityfootball.com/images/league/pix/tickets-banner.jpg",
+    "capture": "20171010221612",
+    "replay_url": "https://web.archive.org/web/20171010221612im_/http://dodgecityfootball.com/images/league/pix/tickets-banner.jpg",
+    "mime": "image/jpeg",
+    "bytes": 40081,
+    "sha256": "09f038f5e3b707a4061071a45f990e24bca6c08a7ec0ba217e8681fb74176e0c",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/pix/top-spacer.png",
+    "original_url": "http://www.dodgecityfootball.com/images/league/pix/top-spacer.png",
+    "capture": "20161203083006",
+    "replay_url": "https://web.archive.org/web/20161203083006im_/http://www.dodgecityfootball.com/images/league/pix/top-spacer.png",
+    "mime": "image/png",
+    "bytes": 46911,
+    "sha256": "c7c53eba1b057b3df5059e0b5b6bcc556f97d62a7379d38439028053e632c4ca",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/staff/IMG_20150315_142133257.jpg",
+    "original_url": "http://dodgecityfootball.com/images/league/staff/IMG_20150315_142133257.jpg",
+    "capture": "20161223202451",
+    "replay_url": "https://web.archive.org/web/20161223202451im_/http://dodgecityfootball.com/images/league/staff/IMG_20150315_142133257.jpg",
+    "mime": "image/jpeg",
+    "bytes": 205695,
+    "sha256": "4bc767797a1f6b1da235ea4a2acdb01bdc85af1ba2202a11e826147f935c5862",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/staff/Valerie-Heston.jpg",
+    "original_url": "http://dodgecityfootball.com/images/league/staff/Valerie-Heston.jpg",
+    "capture": "20161223202447",
+    "replay_url": "https://web.archive.org/web/20161223202447im_/http://dodgecityfootball.com/images/league/staff/Valerie-Heston.jpg",
+    "mime": "image/jpeg",
+    "bytes": 34795,
+    "sha256": "62c5f81252d12c3eafe1e01ad5b9ade9b7aa90352f9e8f6cf55c8872c3c9036c",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/staff/joi.jpg",
+    "original_url": "http://dodgecityfootball.com/images/league/staff/joi.jpg",
+    "capture": "20161223141049",
+    "replay_url": "https://web.archive.org/web/20161223141049im_/http://dodgecityfootball.com/images/league/staff/joi.jpg",
+    "mime": "image/jpeg",
+    "bytes": 23592,
+    "sha256": "311278727c481313b8dd02b5efb9b4d8b18c2d7fb860bb44f642a149933d2b6d",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/league/tickets/2015-wingle-game-seating-pricing.jpg",
+    "original_url": "http://dodgecityfootball.com/images/league/tickets/2015-wingle-game-seating-pricing.jpg",
+    "capture": "20161223205255",
+    "replay_url": "https://web.archive.org/web/20161223205255im_/http://dodgecityfootball.com/images/league/tickets/2015-wingle-game-seating-pricing.jpg",
+    "mime": "image/jpeg",
+    "bytes": 91084,
+    "sha256": "8a25eacd16a417b59572f7d9aaedba9ff08ecdc8be8e22d67553a14aa869e5ce",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/stories/bucks.png",
+    "original_url": "http://www.dodgecityfootball.com/images/stories/bucks.png",
+    "capture": "20170707200718",
+    "replay_url": "https://web.archive.org/web/20170707200718im_/http://www.dodgecityfootball.com/images/stories/bucks.png",
+    "mime": "image/png",
+    "bytes": 53376,
+    "sha256": "09510e339b663117b239671ad975bd5a4987ccc0ede1fb3944259ef0ffbf3586",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/stories/centex.png",
+    "original_url": "http://www.dodgecityfootball.com/images/stories/centex.png",
+    "capture": "20161203091822",
+    "replay_url": "https://web.archive.org/web/20161203091822im_/http://www.dodgecityfootball.com/images/stories/centex.png",
+    "mime": "image/png",
+    "bytes": 53103,
+    "sha256": "9e1a275a4cbd6c6872e10477a52393e501e9e3e55312b3dbce4eb6b5adf4f39f",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/stories/dclaw.png",
+    "original_url": "http://www.dodgecityfootball.com/images/stories/dclaw.png",
+    "capture": "20161203131808",
+    "replay_url": "https://web.archive.org/web/20161203131808im_/http://www.dodgecityfootball.com/images/stories/dclaw.png",
+    "mime": "image/png",
+    "bytes": 733,
+    "sha256": "6afae47594d9e2133fe73ad2fc2c389548803d0d9032ec87d25ab9c3218d3a31",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/stories/edge.png",
+    "original_url": "http://www.dodgecityfootball.com/images/stories/edge.png",
+    "capture": "20161203133538",
+    "replay_url": "https://web.archive.org/web/20161203133538im_/http://www.dodgecityfootball.com/images/stories/edge.png",
+    "mime": "image/png",
+    "bytes": 50734,
+    "sha256": "e9a23e1626c100ed7f95c0e122956d8f321fd2f158833d92e9a1c451c0d7c96d",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/stories/gladiators.png",
+    "original_url": "http://www.dodgecityfootball.com/images/stories/gladiators.png",
+    "capture": "20161203085614",
+    "replay_url": "https://web.archive.org/web/20161203085614im_/http://www.dodgecityfootball.com/images/stories/gladiators.png",
+    "mime": "image/png",
+    "bytes": 48341,
+    "sha256": "c03cfd89decd84a662eec074f61f07fe9ad71a6e871e5b0754c31ad4bfa5fb32",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/stories/kansas-city-phantoms-2.png",
+    "original_url": "http://www.dodgecityfootball.com/images/stories/kansas-city-phantoms-2.png",
+    "capture": "20170707200720",
+    "replay_url": "https://web.archive.org/web/20170707200720im_/http://www.dodgecityfootball.com/images/stories/kansas-city-phantoms-2.png",
+    "mime": "image/png",
+    "bytes": 51310,
+    "sha256": "cf0b9cd2c38f7255fa1e98b8e144bc6cac5b82927acb87c23d2651354defaa0e",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/stories/liberty.png",
+    "original_url": "http://www.dodgecityfootball.com/images/stories/liberty.png",
+    "capture": "20161203160326",
+    "replay_url": "https://web.archive.org/web/20161203160326im_/http://www.dodgecityfootball.com/images/stories/liberty.png",
+    "mime": "image/png",
+    "bytes": 55267,
+    "sha256": "dd0ef2d326e8424a13ef2a280164672f43c9dabd1d738c65107abe18721a62f7",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/stories/mesquite.png",
+    "original_url": "http://www.dodgecityfootball.com/images/stories/mesquite.png",
+    "capture": "20161203084429",
+    "replay_url": "https://web.archive.org/web/20161203084429im_/http://www.dodgecityfootball.com/images/stories/mesquite.png",
+    "mime": "image/png",
+    "bytes": 54399,
+    "sha256": "974bd65749ad4b5203a5cdbe904eb8f36b1b6d67be69a320ab9d5c799ef260e6",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/stories/omaha-beef.png",
+    "original_url": "http://www.dodgecityfootball.com/images/stories/omaha-beef.png",
+    "capture": "20161203110923",
+    "replay_url": "https://web.archive.org/web/20161203110923im_/http://www.dodgecityfootball.com/images/stories/omaha-beef.png",
+    "mime": "image/png",
+    "bytes": 551,
+    "sha256": "0ea932c3dfaf7bd3c61fdd78e9afe6d39c920dc0a9162940d14429a4aa3f2971",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/stories/scbandits.png",
+    "original_url": "http://www.dodgecityfootball.com/images/stories/scbandits.png",
+    "capture": "20161203160322",
+    "replay_url": "https://web.archive.org/web/20161203160322im_/http://www.dodgecityfootball.com/images/stories/scbandits.png",
+    "mime": "image/png",
+    "bytes": 855,
+    "sha256": "3cf6330baa3d89feec03e934932798ad10bcb153e8df7b9606c083dc162e5c2f",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/stories/texas-revs.png",
+    "original_url": "http://www.dodgecityfootball.com/images/stories/texas-revs.png",
+    "capture": "20161203075435",
+    "replay_url": "https://web.archive.org/web/20161203075435im_/http://www.dodgecityfootball.com/images/stories/texas-revs.png",
+    "mime": "image/png",
+    "bytes": 1009,
+    "sha256": "7a06ba08c855c6cdf76bd42d51be31cf49d90e6e3d3d7a684542d21abff7ef4b",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/stories/venom.png",
+    "original_url": "http://www.dodgecityfootball.com/images/stories/venom.png",
+    "capture": "20161203075708",
+    "replay_url": "https://web.archive.org/web/20161203075708im_/http://www.dodgecityfootball.com/images/stories/venom.png",
+    "mime": "image/png",
+    "bytes": 757,
+    "sha256": "33cd6ac5d4f761ff4c5cf5483942c936106e3fdc5f76a78f7e0e1ded2627f316",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/stories/west-michigan-ironmen.png",
+    "original_url": "http://dodgecityfootball.com/images/stories/west-michigan-ironmen.png",
+    "capture": "20161223202442",
+    "replay_url": "https://web.archive.org/web/20161223202442im_/http://dodgecityfootball.com/images/stories/west-michigan-ironmen.png",
+    "mime": "image/png",
+    "bytes": 53796,
+    "sha256": "a1a2a4a3498a6169332a38d2ac0e944ccddb519f3498e8bce27f18d3f6135a74",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/images/stories/wichita-force.png",
+    "original_url": "http://www.dodgecityfootball.com/images/stories/wichita-force.png",
+    "capture": "20161203160316",
+    "replay_url": "https://web.archive.org/web/20161203160316im_/http://www.dodgecityfootball.com/images/stories/wichita-force.png",
+    "mime": "image/png",
+    "bytes": 623,
+    "sha256": "3b52cd48072f676b687f09dadc3f6a31922e059aa835ae0958a717b2c6deefe2",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/templates/shaper_sportson/favicon.ico",
+    "original_url": "http://www.dodgecityfootball.com/templates/shaper_sportson/favicon.ico",
+    "capture": "20161203142139",
+    "replay_url": "https://web.archive.org/web/20161203142139im_/http://www.dodgecityfootball.com/templates/shaper_sportson/favicon.ico",
+    "mime": "image/x-icon",
+    "bytes": 54957,
+    "sha256": "871c1c48d1f2f7706711bc712943113731304a94371bb7d236456481ba4e4033",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/templates/shaper_sportson/images/menu-divider.png",
+    "original_url": "http://dodgecityfootball.com/templates/shaper_sportson/images/menu-divider.png",
+    "capture": "20161224022459",
+    "replay_url": "https://web.archive.org/web/20161224022459im_/http://dodgecityfootball.com/templates/shaper_sportson/images/menu-divider.png",
+    "mime": "image/png",
+    "bytes": 47784,
+    "sha256": "2c49d5fb8f852eee2e1d7066480d34bbfd6aa043fae588be787d60d9eee2f11e",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "public/templates/shaper_sportson/images/presets/preset1/bottom-pattern.png",
+    "original_url": "http://dodgecityfootball.com/templates/shaper_sportson/images/presets/preset1/bottom-pattern.png",
+    "capture": "20161224084747",
+    "replay_url": "https://web.archive.org/web/20161224084747im_/http://dodgecityfootball.com/templates/shaper_sportson/images/presets/preset1/bottom-pattern.png",
+    "mime": "image/png",
+    "bytes": 172271,
+    "sha256": "83ec4d905acf21f4d8eb442cc40f62831f6b8f1213fdc3dfb5877a33c4e23ca9",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "research/original-css/modules/mod_bt_contentslider/tmpl/css/btcontentslider.css",
+    "original_url": "http://dodgecityfootball.com/modules/mod_bt_contentslider/tmpl/css/btcontentslider.css",
+    "capture": "20171010232850",
+    "replay_url": "https://web.archive.org/web/20171010232850cs_/http://dodgecityfootball.com/modules/mod_bt_contentslider/tmpl/css/btcontentslider.css",
+    "mime": "text/css",
+    "bytes": 3993,
+    "sha256": "c28a0daf804a88c633d651ea0ad0d1aa0b7b6cb6700c77f1c8b10a767d947210",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "research/original-css/modules/mod_jux_background_slider/assets/css/supersized.css",
+    "original_url": "http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/css/supersized.css",
+    "capture": "20161203122114",
+    "replay_url": "https://web.archive.org/web/20161203122114cs_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/css/supersized.css",
+    "mime": "text/css",
+    "bytes": 2525,
+    "sha256": "b42abc9abd7d957c7e4169bd624c88eab70be0183dee4052d57db10c67e1be2b",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "research/original-css/modules/mod_jux_background_slider/assets/css/supersized.shutter.css",
+    "original_url": "http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/css/supersized.shutter.css",
+    "capture": "20161203080146",
+    "replay_url": "https://web.archive.org/web/20161203080146cs_/http://www.dodgecityfootball.com/modules/mod_jux_background_slider/assets/css/supersized.shutter.css",
+    "mime": "text/css",
+    "bytes": 42586,
+    "sha256": "742eef8be02f7d8e02d18f63eaee3e72d1fff12c11517e3c26ceed4a175e2c64",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "research/original-css/modules/mod_jux_layerslideshow/assets/css/style.css",
+    "original_url": "http://dodgecityfootball.com/modules/mod_jux_layerslideshow/assets/css/style.css",
+    "capture": "20171011001559",
+    "replay_url": "https://web.archive.org/web/20171011001559cs_/http://dodgecityfootball.com/modules/mod_jux_layerslideshow/assets/css/style.css",
+    "mime": "text/css",
+    "bytes": 27043,
+    "sha256": "41a14de7682b355168bc9e465925bc81c990b50588ddbec2e6cb84a41a05e66d",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "research/original-css/modules/mod_jw_srfr/tmpl/compact/css/template.css",
+    "original_url": "http://dodgecityfootball.com/modules/mod_jw_srfr/tmpl/compact/css/template.css",
+    "capture": "20171010230114",
+    "replay_url": "https://web.archive.org/web/20171010230114cs_/http://dodgecityfootball.com/modules/mod_jw_srfr/tmpl/compact/css/template.css",
+    "mime": "text/css",
+    "bytes": 2671,
+    "sha256": "e96956519d7cd0526d9c8b87a4e385ddd55f5e387aab18d7f03ede95bd00a594",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "research/original-css/modules/mod_sp_news_highlighter/assets/css/style.css",
+    "original_url": "http://www.dodgecityfootball.com/modules/mod_sp_news_highlighter/assets/css/style.css",
+    "capture": "20161203123934",
+    "replay_url": "https://web.archive.org/web/20161203123934cs_/http://www.dodgecityfootball.com/modules/mod_sp_news_highlighter/assets/css/style.css",
+    "mime": "text/css",
+    "bytes": 1415,
+    "sha256": "1ad862555ea1df2edec72b8c4f2edba054da5c9b3c53c80d5d1dc6e7cb7fcaf1",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "research/original-css/modules/mod_sptab/assets/css/style4.css.php",
+    "original_url": "http://dodgecityfootball.com/modules/mod_sptab/assets/css/style4.css.php?id=587",
+    "capture": "20171010222815",
+    "replay_url": "https://web.archive.org/web/20171010222815cs_/http://dodgecityfootball.com/modules/mod_sptab/assets/css/style4.css.php?id=587",
+    "mime": "text/css",
+    "bytes": 1966,
+    "sha256": "1c9782dc412a6d548c33c337ca70434b6ab64bbd678d0b69835f58e68d2eeec6",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "research/original-css/plugins/content/al_facebook_comments/assets/css/style.css",
+    "original_url": "http://dodgecityfootball.com/plugins/content/al_facebook_comments/assets/css/style.css",
+    "capture": "20161223202251",
+    "replay_url": "https://web.archive.org/web/20161223202251cs_/http://dodgecityfootball.com/plugins/content/al_facebook_comments/assets/css/style.css",
+    "mime": "text/css",
+    "bytes": 2249,
+    "sha256": "8fa966cd9e28d4a6295ed6a54fb780286866c6bd1a330f20a1ec942ca91354fa",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "research/original-css/plugins/content/fastsocialshare/style/style.css",
+    "original_url": "http://www.dodgecityfootball.com/plugins/content/fastsocialshare/style/style.css",
+    "capture": "20161203132058",
+    "replay_url": "https://web.archive.org/web/20161203132058cs_/http://www.dodgecityfootball.com/plugins/content/fastsocialshare/style/style.css",
+    "mime": "text/css",
+    "bytes": 2237,
+    "sha256": "22f505877825a55f8e389146895025aeca1703a303be79bad6958ac51840ec8d",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "research/original-css/plugins/system/helix/css/bootstrap.min.css",
+    "original_url": "http://dodgecityfootball.com/plugins/system/helix/css/bootstrap.min.css",
+    "capture": "20161020064539",
+    "replay_url": "https://web.archive.org/web/20161020064539cs_/http://dodgecityfootball.com/plugins/system/helix/css/bootstrap.min.css",
+    "mime": "text/css",
+    "bytes": 106253,
+    "sha256": "68d7dff68fa6b3c0e5dbadf972375f9a56305c275bc04b2b6251beb0fccbd0a3",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "research/original-css/plugins/system/helix/css/font-awesome.css",
+    "original_url": "http://www.dodgecityfootball.com/plugins/system/helix/css/font-awesome.css",
+    "capture": "20161203151050",
+    "replay_url": "https://web.archive.org/web/20161203151050cs_/http://www.dodgecityfootball.com/plugins/system/helix/css/font-awesome.css",
+    "mime": "text/css",
+    "bytes": 22994,
+    "sha256": "a1a3aba64764b8dc337ef37470d03e6e972ca09eecdf69dcd8e2f1f7561f9cfa",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "research/original-css/plugins/system/rokbox/assets/styles/rokbox.css",
+    "original_url": "http://www.dodgecityfootball.com/plugins/system/rokbox/assets/styles/rokbox.css",
+    "capture": "20161203070511",
+    "replay_url": "https://web.archive.org/web/20161203070511cs_/http://www.dodgecityfootball.com/plugins/system/rokbox/assets/styles/rokbox.css",
+    "mime": "text/css",
+    "bytes": 30552,
+    "sha256": "996ce451e8c6a84dbc9e452fe91e9915522d8cb3a0950301d47ddf31ebf459e2",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "research/original-css/templates/shaper_sportson/css/bootstrap-responsive.min.css",
+    "original_url": "http://www.dodgecityfootball.com/templates/shaper_sportson/css/bootstrap-responsive.min.css",
+    "capture": "20161203144106",
+    "replay_url": "https://web.archive.org/web/20161203144106cs_/http://www.dodgecityfootball.com/templates/shaper_sportson/css/bootstrap-responsive.min.css",
+    "mime": "text/css",
+    "bytes": 17325,
+    "sha256": "c8185ae608c12be7e8c788a7799127ca90ba1940107d6f53ea9abacd84137d83",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "research/original-css/templates/shaper_sportson/css/custom.css",
+    "original_url": "http://www.dodgecityfootball.com/templates/shaper_sportson/css/custom.css",
+    "capture": "20161203074601",
+    "replay_url": "https://web.archive.org/web/20161203074601cs_/http://www.dodgecityfootball.com/templates/shaper_sportson/css/custom.css",
+    "mime": "text/css",
+    "bytes": 6210,
+    "sha256": "8441bfd0632914c4371c92846a74f8e402d0b64ea0cccd054809d8f823b6cc7a",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "research/original-css/templates/shaper_sportson/css/mobile-menu.css",
+    "original_url": "http://www.dodgecityfootball.com/templates/shaper_sportson/css/mobile-menu.css",
+    "capture": "20161203131752",
+    "replay_url": "https://web.archive.org/web/20161203131752cs_/http://www.dodgecityfootball.com/templates/shaper_sportson/css/mobile-menu.css",
+    "mime": "text/css",
+    "bytes": 1869,
+    "sha256": "fc42a7811c4f6323744e7c30bb3692e60c5014a9388d9b3e9d257cbe8d6329ad",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "research/original-css/templates/shaper_sportson/css/presets/preset1.css",
+    "original_url": "http://www.dodgecityfootball.com/templates/shaper_sportson/css/presets/preset1.css",
+    "capture": "20161203131927",
+    "replay_url": "https://web.archive.org/web/20161203131927cs_/http://www.dodgecityfootball.com/templates/shaper_sportson/css/presets/preset1.css",
+    "mime": "text/css",
+    "bytes": 5054,
+    "sha256": "bb62c8d4741e296a07f9febc155236164a00475e9afda01a5d6f28d7818d51f8",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "research/original-css/templates/shaper_sportson/css/template.css",
+    "original_url": "http://www.dodgecityfootball.com/templates/shaper_sportson/css/template.css",
+    "capture": "20161203192009",
+    "replay_url": "https://web.archive.org/web/20161203192009cs_/http://www.dodgecityfootball.com/templates/shaper_sportson/css/template.css",
+    "mime": "text/css",
+    "bytes": 44204,
+    "sha256": "62882cc9a7c43e566534e6bb2c333bfd4185b3262b7d78e8a678f90ce3fda603",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "research/recovered/20170316204456-tickets__ticket-pricing.html",
+    "original_url": "http://dodgecityfootball.com/tickets/ticket-pricing.html",
+    "capture": "20170316204456",
+    "replay_url": "https://web.archive.org/web/20170316204456/http://dodgecityfootball.com/tickets/ticket-pricing.html",
+    "mime": "text/html",
+    "bytes": 151995,
+    "sha256": "75e08591c6f57875651d4a1867f3ccc07ff95b8b3fbf65235aba5dbd1171acf9",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "research/recovered/20170712052132-team__staff-coaches.html",
+    "original_url": "http://www.dodgecityfootball.com/team/staff-coaches.html",
+    "capture": "20170712052132",
+    "replay_url": "https://web.archive.org/web/20170712052132/http://www.dodgecityfootball.com/team/staff-coaches.html",
+    "mime": "text/html",
+    "bytes": 162757,
+    "sha256": "d255673c7cdee6188b98ae336829ee0026b3640c6be13243d7199519dbaaa8f2",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "research/recovered/20170712052202-arena__seating-chart.html",
+    "original_url": "http://www.dodgecityfootball.com/arena/seating-chart.html",
+    "capture": "20170712052202",
+    "replay_url": "https://web.archive.org/web/20170712052202/http://www.dodgecityfootball.com/arena/seating-chart.html",
+    "mime": "text/html",
+    "bytes": 158214,
+    "sha256": "7f73e80f8e109d87da4a745055ab058f0531e7120ab3f9d2c3db5f98861f8169",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "research/recovered/20170712082754-news-hm__729-law-sign-qb-s-rudy-johnson-winston-salem-state-teejay-gordon-college-of-idaho.html",
+    "original_url": "http://www.dodgecityfootball.com/news-hm/729-law-sign-qb-s-rudy-johnson-winston-salem-state-teejay-gordon-college-of-idaho.html",
+    "capture": "20170712082754",
+    "replay_url": "https://web.archive.org/web/20170712082754/http://www.dodgecityfootball.com/news-hm/729-law-sign-qb-s-rudy-johnson-winston-salem-state-teejay-gordon-college-of-idaho.html",
+    "mime": "text/html",
+    "bytes": 177811,
+    "sha256": "9941319c59177a9b4d97232736a3cc30d474063be14c74c01d5c6e6da8359c1c",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "research/recovered/20170712082801-news-hm__730-dodge-city-law-sign-4-new-receivers.html",
+    "original_url": "http://www.dodgecityfootball.com/news-hm/730-dodge-city-law-sign-4-new-receivers.html",
+    "capture": "20170712082801",
+    "replay_url": "https://web.archive.org/web/20170712082801/http://www.dodgecityfootball.com/news-hm/730-dodge-city-law-sign-4-new-receivers.html",
+    "mime": "text/html",
+    "bytes": 175455,
+    "sha256": "1355910f64abe2001141de72ff514c709b109a015035ab8a99004009474d632d",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "research/recovered/20170712113731-homepage.html",
+    "original_url": "http://dodgecityfootball.com/",
+    "capture": "20170712113731",
+    "replay_url": "https://web.archive.org/web/20170712113731/http://dodgecityfootball.com/",
+    "mime": "text/html",
+    "bytes": 90684,
+    "sha256": "fc4f569c661f31f63d4c77ba8293a159d9fe5cf20f936fd0b8b5d740c90e87ab",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "research/recovered/20170717200305-news-hm__726-the-dodge-city-law-announce-coaching-addition-for-the-2017-season.html",
+    "original_url": "http://dodgecityfootball.com/news-hm/726-the-dodge-city-law-announce-coaching-addition-for-the-2017-season.html",
+    "capture": "20170717200305",
+    "replay_url": "https://web.archive.org/web/20170717200305/http://dodgecityfootball.com/news-hm/726-the-dodge-city-law-announce-coaching-addition-for-the-2017-season.html",
+    "mime": "text/html",
+    "bytes": 163949,
+    "sha256": "0355a2748f71e938d3c71036e6bf4b6fef453f727c3d0249320b858f49452f6c",
+    "recovery": "Wayback response saved in Safari webarchive"
+  },
+  {
+    "local_path": "research/recovered/20170810100241-news-hm__728-dodge-city-law-add-more-nfl-talent.html",
+    "original_url": "http://www.dodgecityfootball.com/news-hm/728-dodge-city-law-add-more-nfl-talent.html",
+    "capture": "20170810100241",
+    "replay_url": "https://web.archive.org/web/20170810100241/http://www.dodgecityfootball.com/news-hm/728-dodge-city-law-add-more-nfl-talent.html",
+    "mime": "text/html",
+    "bytes": 152076,
+    "sha256": "1389fc5d593bc8a1fe9a565003ceefdef521b9e3aa976d8f64584612ee905e58",
+    "recovery": "Wayback response saved in Safari webarchive"
+  }
+]

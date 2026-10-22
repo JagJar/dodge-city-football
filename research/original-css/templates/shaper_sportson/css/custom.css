@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*this is styling the main and submenus*/
+#sp-main-menu ul.level-0 > li { display: inline-block; margin: 0; padding: 12px 4px; position: relative; text-transform: uppercase; font-size: 17px; font-weight: 700; background: url(/web/20161203074601im_/http://www.dodgecityfootball.com/templates/shaper_sportson/images/menu-divider.png) 100% 50% repeat-y; -webkit-transition: all 200ms; -moz-transition: all 200ms; -o-transition: all 200ms;  transition: all 200ms;}
+
+/*this adjusted the menu left and right padding*/
+#sp-main-menu ul.level-0 > li > a {  display: block;  margin-top: 0px;  margin-right: 0px;  margin-bottom: 0px;  margin-left:0px; padding-top: 10px;  padding-right: 4px;  padding-bottom: 10px;  padding-left: 4px;  color:#000000;}
+#sp-main-menu ul.level-0 > li {display: inline-block; margin: 0; padding: 12px 4px;z-index:5!important;}
+
+/*this set the main menu hover color, font size and normal color*/
+#sp-main-menu ul.level-0 > li:hover a,#sp-main-menu ul.level-0 > li.active a {color: #232323;}
+#sp-main-menu li li:not(.sp-menu-group) a { font-size:14px; font-weight: 400; line-height: normal;color: #000!important;}
+
+/*this set z index of slider for scorestream and menu*/
+#sp-slide.span12 {z-index:-1!important; }
+
+/*this removed and set background of the menu*/
+#sp-header-wrapper {background-color: transparent!important;}
+#header {background:#ECE52B;}
+
+/*this pulled logo over bottom and top menu's*/
+#sp-logo.span3 {margin-top:-62px!important; margin-bottom:-5px!important; margin-left:-20px!important;}
+
+#sp-scorestream.span12 { margin: -5px 0px -5px 0px !important; z-index:9 !important;}
+#sp-fp-headlines-wrapper {margin-bottom:10px!important;margin-top:0px; } 
+#sp-headlines.span3{background-color:#ECE52B!important;  }
+
+/*this pulled up main content of site on the homepage only*/
+.homepage #sp-scroller-wrapper { margin-top: -5px;}
+
+/*i changed to 80px for the ninja icons module*/
+#sp-categories-wrapper #sp-categories { border-top: 1px solid #232323;-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);padding: 0 20px;  height: 80px;  line-height: 80px;}
+  
+/*this pulled up the bottom5 module title*/
+#sp-bottom-wrapper #sp-bottom5 {  padding-top: 0px;}
+
+#sp-sidebar1 {  border-left: 0px solid #fff;  border-right: 0px solid #e1e1e1; padding-bottom: 0px;  -webkit-box-shadow: inset 1px 0 0 #e1e1e1,inset -1px 0 0 #fff;  -moz-box-shadow: inset 1px 0 0 #e1e1e1,inset -1px 0 0 #fff;  box-shadow: inset 1px 0 0 #e1e1e1,inset -1px 0 0 #fff;}
+
+/*this set background hover on bottom memu positions*/
+#sp-bottom-wrapper ul li a:hover {  color: #232323 !important; text-shadow: none; font-weight:bold!important;}
+
+/*this is styling on mobile phone and tablets with this display*/
+@media (min-width: 320px) and (max-width: 480px) { 
+.responsive #sp-main-body-wrapper { padding-top: 10px!important; }
+.responsive .featured-news h3 { top: 50%; margin-top: 0px!important;}
+#sp-header-wrapper {background-color: #232323!important;}}
+
+@media (min-width: 768px) and (max-width: 979px) {
+.responsive #sp-main-body-wrapper { padding-top: 10px!important;} 
+.responsive .featured-news h3 { top: 50%; margin-top: 0px!important;}
+#sp-header-wrapper {background-color: #232323!important;}}
+
+/*this set the dropdown menu background color*/
+.sp-submenu .sp-submenu-wrap {  background: #ECE52B;  -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.2);  -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,.2);  box-shadow: 0 0 10px 0 rgba(0,0,0,.2);}
+
+/*this set hover menu color and size*/
+#sp-main-menu li li:not(.sp-menu-group):hover a,#sp-main-menu li li:not(.sp-menu-group).active a {  color: #232323;}
+#sp-main-menu div.sp-menu-group a.sp-menu-group .menu-title {  text-transform: capitalize;  font-size: 14px;  color: #232323;}
+#sp-main-menu ul.level-0 > li >a .menu-desc {font-size:11px;color:#232323; display: block;}
+
+/*bottom presets adjustment for font and link color*/
+#sp-bottom-wrapper a:not(.btn),#sp-partner-wrapper a:not(.btn) {  color: #232323;}
+#sp-bottom-wrapper a:not(.btn):hover,#sp-partner-wrapper a:not(.btn):hover {  color: #232323;}
+
+/*this set the font size*/
+#sp-component.menu-news-headline-news div..srfrPreText{font-size:20px; font-weight:bold;color:#232323; margin-left: 8px; margin-top:8px;}
+
+/*this set the background color of these modules
+#sp-gamecenter-and-social-wrapper.container{background-color:#232323!important; }*/
+
+#sp-gc-1.span.3 {color:#FFFFFF!important;}
+#sp-gc-2.span.3 {color:#FFFFFF!important;}
+#sp-gc-3.span.3 {color:#FFFFFF!important;}
+#sp-gc-4.span.3 {color:#FFFFFF!important;}
+
+#gamecenter-and-social.row-fluid {background-color:#232323!important; margin-top:0px;}
+
+
+#sp-frontpage-news.span12{background-color:#232323!important;}
+#sp-videos.span12{background-color:#232323!important;}
+#sp-scroller-wrapper .sp-nh-item {background: #232323!important;}
+
+/*this styling pulled up some of the mods flush*/
+#sp-secondary-links.span12 {margin-bottom:-10px!important;}
+#sp-t-scorestream.span12 {margin-top: 0px!important; margin-bottom:-6px!important;}
+#sp-l-scorestream.span12 {margin-top:-5px!important; margin-bottom:-5px!important;}
+#sp-team-sponsors.span12 {margin-top: 0px!important; margin-bottom:-7px!important;}*/
+
+#sp-bottom-wrapper h3.header { background: none;  text-shadow: 0 1px rgba(0,0,0,0.5);  font-size: 18px;  color:#000!important;  border: 0;  box-shadow: none;  text-transform: capitalize;}
+
+#sp-scroller-wrapper .sp-nh-buttons { background: #ECE52B!important; margin-right: 0;}
+#sp-scroller-wrapper .sp-nh-buttons .sp-nh-text { font-size: 18px; color: #000!important; text-transform: uppercase;  margin-left: 20px; font-weight:bold;}
+
+/*
+     FILE ARCHIVED ON 07:46:01 Dec 03, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 05:35:00 Oct 22, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 0.413
+  load_resource: 459.791 (2)
+  PetaboxLoader3.resolve: 324.208
+  PetaboxLoader3.datanode: 94.129 (2)
+  revisit.resolve: 32.212
+*/

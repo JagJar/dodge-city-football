@@ -1,0 +1,67 @@
+/*
+# SP News Highlighter Module by JoomShaper.com
+# --------------------------------------------
+# Author    JoomShaper http://www.joomshaper.com
+# Copyright (C) 2010 - 2014 JoomShaper.com. All Rights Reserved.
+# License - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+# Websites: http://www.joomshaper.com
+*/
+.sp_news_higlighter{
+	position: relative;
+}
+.sp-nh-buttons{
+	float: left;
+	margin-right: 5px;
+}
+.sp-nh-item{
+	overflow: hidden;
+	position: relative;
+}
+span.sp-nh-date{ 
+	font-size: 80%;
+	font-style: italic;
+}
+span.sp-nh-text{
+	margin: 0 6px 0 0
+}
+span.sp-nh-text,
+.sp-nh-prev,
+.sp-nh-next {
+	display: block;
+	float: left;
+}
+.sp-nh-prev,
+.sp-nh-next{
+	background-repeat: no-repeat;
+	cursor: pointer;
+	width: 13px;
+	margin: 0 2px;
+}
+.sp-nh-prev{
+	background-position: 0 50%
+}
+.sp-nh-next{
+	background-position: -26px 50%
+}
+.sp-nh-prev:hover{ 
+	background-position: -13px 50%
+}
+.sp-nh-next:hover{
+	background-position: -39px 50%
+}
+/*
+     FILE ARCHIVED ON 12:39:34 Dec 03, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 05:34:59 Oct 22, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 0.388
+  load_resource: 191.951 (2)
+  PetaboxLoader3.resolve: 91.292 (2)
+  PetaboxLoader3.datanode: 34.994 (2)
+  revisit.resolve: 95.809
+*/
